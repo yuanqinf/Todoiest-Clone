@@ -1,0 +1,47 @@
+{
+  "name": "todoiest-clone",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "firebase": "^6.2.4",
+    "@testing-library/react": "^8.0.5",
+    "moment": "^2.27.0",
+    "node-sass": "^4.14.1",
+    "postcss-font-smoothing": "^0.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-icons": "^3.10.0",
+    "react-scripts": "3.4.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "coverage": "react-scripts test --env=jsdom --watchAll=false --coverage",
+    "eject": "react-scripts eject"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js",
+      "!src/hooks/*.js",
+      "!src/context/*.js"
+    ],
+    "coverageReporters": [
+      "html",
+      "text"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
